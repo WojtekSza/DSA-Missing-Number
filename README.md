@@ -9,7 +9,7 @@ Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0
 ```
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        #converstion from list to set casue only unique numbers are avaialable
+        #converstion from list to set casue only unique numbers are avaialable, it will reduce time complexity from O(n2) to O(n) while iterating thru !!!!
         nums=set(nums)
         # iteration thru range of max len of input nums
         for i in range(len(nums)+1):
